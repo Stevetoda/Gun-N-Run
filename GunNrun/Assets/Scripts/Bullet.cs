@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     public float bulletSpeed = 3f;
     public float range = 3f;
     public float explosionRadius = 0.1f;
+    public float damage = 0.5f;
     public GameObject contactEffect;
     public string enemyTag = "enemy";
 
@@ -59,7 +60,7 @@ public class Bullet : MonoBehaviour
 
     public void HitTarget()
     {
-        Destroy(gameObject);
+        Destroy(gameObject, 0.05f);
         GameObject effect = Instantiate(contactEffect, transform.position, transform.rotation);
         Explode();
         Destroy(effect, 1f);
