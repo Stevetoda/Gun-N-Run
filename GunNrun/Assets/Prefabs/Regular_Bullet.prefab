@@ -94,8 +94,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 3
-  range: 3
+  range: 9
   explosionRadius: 1
+  damage: 0.5
   contactEffect: {fileID: 1448300471732061369, guid: 17be864e18fe13941bd20efd72e01c99,
     type: 3}
   enemyTag: enemy
